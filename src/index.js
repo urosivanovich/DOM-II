@@ -66,11 +66,22 @@ menu.forEach(a => {
 
 const buttons = document.querySelectorAll('.btn');
 buttons.forEach( btn => {
-    btn.addEventListener('dblclick', function(e){
+    btn.addEventListener('dblclick', e =>
         e.target.style.backgroundColor = 'orange'
-})
+    )
 })
 
+// SCROLL
+ 
+window.addEventListener('scroll', () => {
+
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+
+    if(scrolled === scrollable){
+        alert("you've reached the bottom")
+    }
+})
 
 
 
