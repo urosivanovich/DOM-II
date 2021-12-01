@@ -60,3 +60,20 @@ menu.forEach(a => {
         event.target.style.color = ''
     })
 })
+
+// DBL CLICK    
+
+
+const buttons = document.querySelectorAll('.btn');
+buttons.forEach( btn => {
+    btn.addEventListener('dblclick', function(e){
+        e.target.style.backgroundColor = 'orange'
+})
+})
+
+
+
+
+
+
+
